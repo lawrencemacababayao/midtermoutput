@@ -289,7 +289,6 @@ span {
     .mode {
         display: inline;
         margin-left: auto;
-        margin-right: 10px;
     }
 
     h3 {
@@ -333,27 +332,40 @@ span {
     }
 
     .mode {
-        display: inline;
+        display: block;
         position: absolute;
         top: 25px;
-        right: 20px;
+        right: 80px;
         z-index: 999;
     }
 
-    .navbar {
-        width: 100%;
+    header {
+        padding: 15px 20px;
         justify-content: space-between;
-        align-items: center;
-        padding-right: 10px;
-        padding-left: 10px;
-        position: relative;
     }
 
     .logoimage {
-        margin-left: 10px;
+        margin-left: 0;
     }
 }
+@media screen and (max-width: 1024px) {
+    .navlinks {
+        display: none;
+    }
 
+    .mode {
+        display: block;
+    }
+
+    .logoimage {
+        margin-left: 0;
+    }
+
+    header {
+        padding: 15px 20px;
+        justify-content: space-between;
+    }
+}
 
 
 

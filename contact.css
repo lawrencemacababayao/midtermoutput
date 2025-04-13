@@ -187,38 +187,36 @@ h3 {
     width: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
     .navlinks {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin-top: 10px;
+        display: none;
     }
 
-    .navlinks li {
-        padding: 10px 0;
+    .mode {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 80px;
+        z-index: 999;
+    }
+
+    header {
+        padding: 15px 20px;
+        justify-content: space-between;
     }
 
     .logoimage {
         margin-left: 0;
     }
-
-    .profile .prof-image {
-        width: 250px;
-        height: 250px;
-    }
-
-    .mode {
-        display: inline;
-        margin-left: auto;
-        margin-right: 10px;
-    }
 }
+@media screen and (max-width: 1024px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
 
-@media (max-width: 768px) {
     .sec-one {
-        padding: 50px 30px;
+        padding: 0 20px;
     }
 
     .inputs-div {
@@ -226,37 +224,22 @@ h3 {
         align-items: center;
     }
 
-    input, .submit {
-        width: 100%;
-        margin: 1rem 0;
+    input {
+        margin: 10px 0;
+        width: 90%;
+    }
+
+    .submit {
+        width: 90%;
+        margin: 20px auto 0 auto;
     }
 
     .overlay-div {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
         height: auto;
-        padding: 2rem 0;
-    }
-}
-
-
-
-@media (max-width: 768px) {
-    .navlinks {
-        display: none; /* hide the nav links */
-    }
-
-    .mode {
-        display: block; /* show the hamburger menu */
-    }
-
-    .logoimage {
-        margin-left: 10px; /* adjust logo spacing on small screens */
-    }
-
-    header {
-        padding: 10px 20px;
+        margin: 0;
+        padding: 0;
     }
 }
 

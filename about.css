@@ -149,8 +149,7 @@ li, a, button {
     text-align: center;
     font-size: 4em;
     color: rgb(154, 154, 255);
-    white-space: nowrap; 
-
+    padding: 5rem;
 }
 .sec-one-parag {
     color: whitesmoke;
@@ -326,5 +325,8 @@ progress {
 
     .sec-three {
         padding: 2rem;
+    }
+    .aboutme{
+        padding: 0;
     }
 }
