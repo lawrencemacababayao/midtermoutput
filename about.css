@@ -1,0 +1,330 @@
+
+* {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color:black; 
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+body.system-mode {
+    background-color: whitesmoke;
+  }
+body.system-mode .header-mode {
+
+    background-color: whitesmoke;
+    
+}
+body.system-mode i{
+    color: black;
+}
+body.system-mode a, .logoimage{
+    color: darkslateblue;
+
+}
+body.system-mode .navlinks li a:hover{
+    text-shadow: 0 0 0px rgb(0, 0, 0);
+
+}
+body.system-mode .home{
+    color: rgb(99, 99, 207);
+
+}
+
+body.system-mode .logoimage{
+    filter: brightness(100%);
+}
+body.system-mode h3{
+    color: black;
+}
+body.system-mode h4{
+    color: black;
+}
+body.system-mode span{
+    color: darkslateblue;
+}
+body.system-mode p{
+    color: black;
+}
+body.system-mode .prof-image{
+    filter: brightness(100%);
+}
+body.system-mode .explore{
+    background-color: whitesmoke;
+    color: darkslateblue;
+}
+body.system-mode .explore:hover{
+    background-color: darkslateblue;
+    color: whitesmoke;
+    
+}
+body.system-mode .prof-image:hover{
+    filter: brightness(100%);
+    box-shadow: 0 0 150px 30px rgb(136, 136, 244);
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px  5%;
+    background-color:black;
+    transition: background-color 0.3s ease;
+}
+.mode {
+    border: none;
+    background: none;
+    margin-right: 10px;
+    margin-left: 0;
+    width: 50px;
+    display: none;
+
+}
+.mode:hover {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+
+}
+i {
+    font-size: 25px;
+    color: rgb(136, 136, 244);
+}
+.about {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: rgb(136, 136, 244);
+}
+li, a, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:darkslateblue;
+}
+
+
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.navlinks li a {
+        transition: all 0.3s ease-in-out 0s;
+        font-weight: bold;
+        font-size: 17px;
+        text-shadow: 0 0 0px rgb(0, 0, 0);
+}
+.navlinks li a:hover {
+        color:rgb(136, 136, 244);
+        text-shadow: 0 0 15px rgb(136, 136, 244);
+        text-decoration: underline;
+        text-underline-offset: 8px;
+}
+.logoimage{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    margin-left: 50px;
+    filter: brightness(180%);
+    padding-top: 10px;
+}
+.sec-one {
+    width: 100%;
+    min-height: 70vh;
+    padding: 3rem 7rem;
+    
+}
+
+
+.aboutme {
+    text-align: center;
+    padding: 5rem;
+    font-size: 4em;
+    color: rgb(154, 154, 255);
+
+}
+.sec-one-parag {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 17px;
+    font-style: italic;
+
+}
+.sec-two {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(300px);
+    padding: 0 5rem;
+    margin-top: 5rem;
+}
+.child-boxes {
+    background-color: rgb(54, 46, 105);
+    padding:3rem;
+
+}
+
+.sec-two-left {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.sec-two-right {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.sec-two-right {
+    padding-top: 3rem;
+}
+
+.skills {
+    color: rgb(154, 154, 255);
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+.skills-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    filter: brightness(60%);
+    border-radius: 20px;
+}
+.skills-parag {
+    color: whitesmoke;
+
+}
+.html-css-label {
+    color: whitesmoke;
+}
+progress {
+    width: 95%;
+    height: 50px;
+    accent-color: rgb(124, 124, 185);
+}
+.styled-range {
+    pointer-events: none;
+    opacity: 0.5;
+    accent-color: rgb(216, 216, 254); /* change the color */
+
+  }
+
+  .sec-three {
+    width: 100%;
+    min-height: auto;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  
+
+
+  }
+  progress::-webkit-progress-value {
+    transition: width 1s ease-in-out;
+  }
+  
+.child-boxes-three {
+    text-align: center;
+    
+    padding-top: 3rem;
+}
+
+  .education {
+    font-size: 30px;
+    text-align: center;
+    padding: 0 4rem;
+    padding-top: 9rem;
+    color: whitesmoke;
+  }
+  .school-logo {
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 100px;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+
+  }
+  h4 {
+    padding-top: 1rem;
+  }
+  .school-desc {
+    text-align: center;
+    padding: 2rem;
+    line-height: 25px;
+  }
+  .desc-left {
+    padding-top: 3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    .navlinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navlinks li {
+        padding: 10px 0;
+    }
+
+    .logoimage {
+        margin-left: 0;
+    }
+
+    .profile .prof-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mode {
+        display: inline;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .navlinks.active {
+        display: flex;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .mode {
+        display: block;
+    }
+}
+@media screen and (max-width: 768px) {
+    .sec-two {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    .sec-three {
+        padding: 2rem;
+    }
+}

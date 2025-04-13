@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>myportfolio</title>
+</head> 
+<body>
+
+    <header class="header-mode">
+        <a href=""><img class="logoimage" src="images/finallogo.png" alt="" /></a>
+        <button class="mode" ><i class="fa-solid fa-bars"></i></button>
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li><a class="home" href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Projects.html">PROJECTS</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile">
+            <img class="prof-image" src="id.jpg" alt="" id="toggle-btn" />
+        </div>
+            <div class="parag-body-content">
+                <h3>Hi, It's <span class="name">Lawrence</span></h3>
+                <h4>I'm a <span class="programmer"></span><span class="enthusiast">enthusiast!</span></h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                </p>
+                <br>
+                <a href="#"><button class="explore">Explore More!</button></a>
+            </div>
+            <script>
+                const button = document.getElementById('toggle-btn');
+              
+                button.addEventListener('click', () => {
+                  document.body.classList.toggle('system-mode');
+        
+                });
+              </script>
+
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('.programmer', {
+                strings: ['Web Development', 'Designing', 'Programming'],
+                typeSpeed: 70,
+                backSpeed: 50, 
+                loop: true
+              
+            });
+        </script>
+    </main>
+
+    <footer class="footer"></footer>
+    
+</body>
+</html>

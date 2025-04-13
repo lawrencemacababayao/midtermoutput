@@ -1,0 +1,359 @@
+﻿
+* {
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:black; 
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+body.system-mode {
+    background-color: whitesmoke;
+  }
+body.system-mode .header-mode {
+
+    background-color: whitesmoke;
+    
+}
+body.system-mode i{
+    color: black;
+}
+body.system-mode a, .logoimage{
+    color: darkslateblue;
+
+}
+body.system-mode .navlinks li a:hover{
+    text-shadow: 0 0 0px rgb(0, 0, 0);
+
+}
+body.system-mode .home{
+    color: rgb(99, 99, 207);
+
+}
+
+body.system-mode .logoimage{
+    filter: brightness(100%);
+}
+body.system-mode h3{
+    color: black;
+}
+body.system-mode h4{
+    color: black;
+}
+body.system-mode span{
+    color: darkslateblue;
+}
+body.system-mode p{
+    color: black;
+}
+body.system-mode .prof-image{
+    filter: brightness(100%);
+}
+body.system-mode .explore{
+    background-color: whitesmoke;
+    color: darkslateblue;
+}
+body.system-mode .explore:hover{
+    background-color: darkslateblue;
+    color: whitesmoke;
+    
+}
+body.system-mode .prof-image:hover{
+    filter: brightness(100%);
+    box-shadow: 0 0 150px 30px rgb(136, 136, 244);
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px  5%;
+    background-color:black;
+    transition: background-color 0.3s ease;
+}
+.mode {
+    border: none;
+    background: none;
+    margin-right: -50px;
+    margin-left: 40px;
+    width: 50px;
+    display: none;
+
+}
+.mode:hover {
+    border: none;
+    background: none;
+    cursor: pointer;
+
+
+}
+i {
+    font-size: 25px;
+    color: rgb(136, 136, 244);
+}
+.home {
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    color: rgb(136, 136, 244);
+}
+li, a, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:500;
+    font-size:16px;
+    color:darkslateblue;
+}
+
+
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+.navlinks li a {
+        transition: all 0.3s ease-in-out 0s;
+        font-weight: bold;
+        font-size: 17px;
+        text-shadow: 0 0 0px rgb(0, 0, 0);
+}
+.navlinks li a:hover {
+        color:rgb(136, 136, 244);
+        text-shadow: 0 0 15px rgb(136, 136, 244);
+        text-decoration: underline;
+        text-underline-offset: 8px;
+}
+.logoimage{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    margin-left: 50px;
+    filter: brightness(180%);
+    padding-top: 10px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+
+}
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 500px;
+}
+
+.profile .prof-image {  
+        width: 400px;
+        height: 400px;
+        border-radius:50%;
+        object-fit: cover;
+        filter: brightness(60%) contrast(110%);
+        border-style: solid;
+        border-color: darkslateblue;
+        border-width: 10px;
+        box-shadow: 0 0 0px 0px rgb(136, 136, 244);
+        transition:all 0.4s ease-in-out;
+
+}   
+.profile .prof-image:hover {
+    border-color: rgb(136, 136, 244); 
+    box-shadow: 0 0 150px 30px rgb(136, 136, 244);
+    cursor: pointer;
+    filter: brightness(90%);
+
+}   
+
+.parag-body-content {
+    width: 50%;
+}
+.profile div {
+        flex: 1;
+}
+h3{
+    font-weight:bold;
+    font-size:80px;
+}
+h4 {
+    font-size: 40px;
+}
+h1, h3, h4, p {
+    color: rgb(215, 215, 215);
+    text-align: left;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    padding-top: 30px;
+}
+
+span {
+    color: rgb(111, 111, 207);
+}
+
+.explore{
+    border-radius: 10px;
+    background-color: black;
+    border-style: solid;
+    border-color: darkslateblue;
+    width: 130px;
+    height: 40px;
+    color:darkslateblue;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.explore:hover {
+    border: none;
+    background-color: rgb(111, 111, 207);
+    color: black;
+    cursor: pointer;
+}
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: darkslateblue;
+}
+
+/* -------------------- TABLET -------------------- */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 5%;
+    }
+
+    .navlinks li {
+        padding: 10px 10px;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .profile,
+    .parag-body-content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .profile .prof-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    h3 {
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+}
+
+/* -------------------- MOBILE -------------------- */
+@media screen and (max-width: 600px) {
+    .navlinks {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navlinks li {
+        padding: 10px 0;
+    }
+
+    .logoimage {
+        margin-left: 0;
+    }
+
+    .profile .prof-image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .mode {
+        display: inline;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .explore {
+        width: 100%;
+        max-width: 200px;
+        margin-top: 10px;
+    }
+
+    .parag-body-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    main {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .navlinks {
+        display: none;
+    }
+
+    .mode {
+        display: inline;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .navbar {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 10px;
+        padding-left: 10px;
+        position: relative;
+    }
+
+    .logoimage {
+        margin-left: 10px;
+    }
+}
+
+
+
+

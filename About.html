@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="about.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>myportfolio</title>
+</head>
+<body>
+
+    <header class="header-mode">
+        <a href=""><img class="logoimage" src="images/finallogo.png" alt="" /></a>
+        <button class="mode" ><i class="fa-solid fa-bars"></i></button>
+
+        <nav class="navbar">
+            <ul class="navlinks">
+                <li><a href="index.html">HOME</a></li>
+                <li><a class="about" href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Projects.html">PROJECTS</a></li>
+                  
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="sec-one">
+        <h1 class="aboutme">ABOUT ME</h1>
+        <p class="sec-one-parag">Hi, I’m Lawrence Cagas Macababayao, an Information Technology student with a strong interest in web development, programming, and web designing.
+            I enjoy learning how technology can solve real-world problems, and I’m currently building my skills in  C#, HTML/CSS, JavaScript and MySQL.</p>
+    </section>
+
+
+
+    <section class="sec-two">
+        <div class="child-boxes sec-two-left">
+            <img class="skills-image" src="skills.jpg" alt="">
+        </div>
+
+        <div class="child-boxes sec-two-right">
+            <h3 class="skills">SKILLS</h3>
+            <p class="skills-parag">I believe great design solves problems and empowers people, and I’m passionate about building things that make life easier.</p>
+            <br>
+            <br><br>    
+            <label class="html-css-label" for="range"> HTML/CSS</label>
+            <progress value="80" max="100"></progress>
+            <br><br>    
+            <label class="html-css-label" for="range"> JavaScript</label>
+            <progress value="20" max="100"></progress>
+            <br><br>  
+            <label class="html-css-label" for="range"> C#</label>
+            <br>  
+            <progress value="70" max="100"></progress>
+            <br><br>  
+            <label class="html-css-label" for="range"> MySQL</label>
+            <br>  
+            <progress value="50" max="100"></progress>
+
+        </div>
+    </section>
+
+    <h3 class="education">━━━━━━━━━━━━━━━━━━━━ EDUCATION ━━━━━━━━━━━━━━━━━━━━</h3>
+    <section class="sec-three">
+        
+        <div class="child-boxes-three sec-three-left">
+            <img class="school-logo" src="lnhs-removebg-preview.png" alt="">
+            <h4>LUNAO NATIONAL HIGHSCHOOL</h4>
+            <p class="school-desc desc-left">I completed my junior high school education at Lunao National High School, where I developed a strong foundation in academics and personal growth. The experience shaped my discipline, confidence, and passion for learning, preparing me for future educational pursuits.</p>
+        </div>
+        <div class="child-boxes-three sec-three-middle">
+            <img class="school-logo" src="abcca.png" alt="">
+            <h4>ASIAN BUSINESS CABLETOW COOPERATIVE ACADEMY</h4>
+            <p class="school-desc">I graduated senior high school at Asian Business Cabletow Cooperative Academy (ABCCA) under the ICT strand, focusing on hardware and software. My training included hands-on experience in installing servers and understanding computer systems, which strengthened my technical skills and knowledge.</p>
+      
+        </div>
+        <div class="child-boxes-three sec-three-right">
+            <img class="school-logo" src="gcc.png" alt="">
+            <h4>GINGOOG CITY COLLEGES</h4>
+            <p class="school-desc desc-left">I am currently a second-year Information Technology student at Gingoog City Colleges, Inc. My studies focus on developing skills in programming, networking, and system analysis, helping me grow both technically and professionally in the field of IT.</p>
+      
+        </div>
+    </section>
+
+    <script>
+        const modeBtn = document.querySelector('.mode');
+        const nav = document.querySelector('.navlinks');
+      
+        modeBtn.addEventListener('click', () => {
+          nav.classList.toggle('active');
+        });
+      </script>
+      
+</body>
+</html>
